@@ -41,11 +41,11 @@ def linear_newmark_krenk(M,C,K,f,u0,udot0,h,gamma,beta):
     """
     
     # Initialize variables
-    u = np.zeros((M.shape[0],f.shape[1]))
+    u = np.zeros((M.shape[0],f.shape[0]))
     
-    udot = np.zeros((M.shape[0],f.shape[1]))
+    udot = np.zeros((M.shape[0],f.shape[0]))
     
-    u2dot = np.zeros((M.shape[0],f.shape[1]))
+    u2dot = np.zeros((M.shape[0],f.shape[0]))
     
     # Insert initial conditions in response vectors
     u[:,0] = u0[:,0]
